@@ -1,0 +1,173 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-bottom: 100px;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+textarea.form-control {
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 40%;
+  border-radius: 19px;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-title {
+  text-align: center;
+}
+
+.lang {
+  text-align: center;
+  color: #ec9b3b;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+pre {
+  text-align: initial;
+}
+
+label {
+  margin-top: 5px;
+}
+
+.btn.btn-primary {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form,
+.table {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.table {
+  width: 80%;
+}
+
+.addnew {
+  margin-left: 82%;
+}
+
+.signup-form form .form-control {
+  height: 41px;
+  background: #f2f2f2;
+  box-shadow: none !important;
+  border: none;
+}
+
+.signup-form {
+  width: 390px;
+  margin: 30px auto;
+}
+.signup-form form {
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.signup-form h2 {
+  color: #333;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.signup-form hr {
+  margin: 0 -30px 20px;
+}
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  min-width: 140px;
+  width: 100%;
+}
+
+.signup-form .hint-text {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+footer {
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #373b44;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+
+.code-anim {
+  font-size: 4em;
+  text-align: center;
+  top: 50px;
+  position: relative;
+}
+
+.blink {
+  color: #ffb2b2;
+  font-size: 1.4em;
+  animation: blink-anim 1s ease 0s infinite alternate;
+  letter-spacing: 5px;
+}
+
+@keyframes blink-anim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.homepage {
+  background: #eb6864;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  height: 90vh;
+  margin-bottom: -10vh;
+}
+
+.homepage p {
+  color: white;
+  font-size: 26px;
+  margin-top: 150px;
+}
+
+.homepage h1 {
+  font-size: 7em;
+  margin-top: 0;
+  font-weight: bold;
+}
