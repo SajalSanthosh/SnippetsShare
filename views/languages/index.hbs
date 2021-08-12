@@ -1,0 +1,23 @@
+<h1>
+  {{title}}
+</h1>
+{{#if user}}
+<a href="/languages/add" class="btn btn-primary addnew">Add Language</a>
+{{/if}}
+
+<table class="table table-striped table-hover">
+  <thead>
+    <th>Name</th>
+  </thead>
+  {{#each dataset}}
+  <tr>
+    <td>{{this.name}}</td>
+    {{#if ../user}}
+    <td>
+      <a href="/languages/edit/{{this._id}}" class="btn btn-primary">Edit</a>
+      <a href="/languages/delete/{{this._id}}" class="btn btn-danger" onclick="return confirmDeletion();">Delete</a>
+    </td>
+    {{/if}}
+  </tr>
+  {{/each}}
+</table>

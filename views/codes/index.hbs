@@ -1,0 +1,24 @@
+<h1>
+  {{title}}
+</h1>
+{{#if user}}
+<a href="/codes/add" class="btn btn-primary addnew">Add code</a>
+{{/if}}
+
+<div class="container">
+  {{!-- To Show data --}}
+  {{#each dataset}}
+  <div class="card">
+    <div class="card-body">
+      <span class="lang">{{this.language}}</span>
+      <h5 class="card-title">{{this.title}}</h5>
+      <pre class="card-text"><code>{{this.name}} </code></pre>
+      {{#if ../user}}
+      <a href="/codes/edit/{{this._id}}" class="btn btn-primary">Edit</a>
+      <a href="/codes/delete/{{this._id}}" class="btn btn-danger" onclick="return confirmDeletion();">Delete</a>
+      </td>
+      {{/if}}
+    </div>
+  </div>
+  {{/each}}
+</div>
