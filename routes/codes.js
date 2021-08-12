@@ -25,6 +25,18 @@ router.get('/', (req, res, next) => {
     })
 });
 
+// Search
+router.post('/', (req, res, next) => {
+    Code.find({ "title": { "$regex": req.body.query} }, (err, codes) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.render('codes/index', { title: 'Browse Codes', dataset: codes, searchquery: req.body.query, user: req.user });
+        }
+    })
+});
+
 router.get('/add', IsLoggedIn, (req, res, next) => {
     // Get list of languages
     language.find((err, languages) => {

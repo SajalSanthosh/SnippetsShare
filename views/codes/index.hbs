@@ -5,6 +5,11 @@
 <a href="/codes/add" class="btn btn-primary addnew">Add code</a>
 {{/if}}
 
+<form class="d-flex" method="POST">
+  <input class="form-control me-sm-2" type="text" name="query" placeholder="Search" value="{{searchquery}}">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+</form>
+
 <div class="container">
   {{!-- To Show data --}}
   {{#each dataset}}
